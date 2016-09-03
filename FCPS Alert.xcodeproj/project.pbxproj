@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9F4791D7B55A50077EFC0 /* schooltableview.swift */; };
 		93002E4C1D30A74B009FFFE6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */; };
 		93002E5B1D30A7BD009FFFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934D07A81C17C7E6005D9810 /* Main.storyboard */; };
 		930DCC3A1C266F13003CA42B /* Info-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 930DCC391C266F13003CA42B /* Info-100-2.png */; };
@@ -93,6 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84D9F4791D7B55A50077EFC0 /* schooltableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = schooltableview.swift; path = ../schooltableview.swift; sourceTree = "<group>"; };
 		93002E491D30A74B009FFFE6 /* Alert widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Alert widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		930DCC391C266F13003CA42B /* Info-100-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-100-2.png"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				93A753E11C28A84B00704D25 /* Source */,
 				934D07A41C17C7E6005D9810 /* AppDelegate.swift */,
 				934D07A81C17C7E6005D9810 /* Main.storyboard */,
+				84D9F4791D7B55A50077EFC0 /* schooltableview.swift */,
 				934D07AE1C17C7E6005D9810 /* Assets.xcassets */,
 				934D07B01C17C7E6005D9810 /* LaunchScreen.storyboard */,
 				93A753DF1C27A52200704D25 /* Launch Screen.storyboard */,
@@ -539,6 +542,7 @@
 			files = (
 				934D07AD1C17C7E6005D9810 /* FCPS_Alert.xcdatamodeld in Sources */,
 				934D07A51C17C7E6005D9810 /* AppDelegate.swift in Sources */,
+				84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,8 +648,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -667,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -688,8 +694,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -705,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

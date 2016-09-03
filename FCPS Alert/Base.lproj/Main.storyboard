@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="16A239m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cIm-BM-ped">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cIm-BM-ped">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="3921" y="2091"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Schooltableview-->
         <scene sceneID="CcK-6W-2pA">
             <objects>
-                <tableViewController storyboardIdentifier="ViewController1" clearsSelectionOnViewWillAppear="NO" id="AtC-va-0IQ" customClass="TableViewController" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ViewController1" clearsSelectionOnViewWillAppear="NO" id="AtC-va-0IQ" customClass="schooltableview" customModule="FCPS_Alert" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="640" sectionHeaderHeight="28" sectionFooterHeight="28" id="my4-DM-bNZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,18 +146,11 @@
                                                     <frame key="frameInset" minX="155" minY="85" width="66" height="66"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="December 0, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90m-jv-R5f">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="December 7, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90m-jv-R5f">
                                                     <frame key="frameInset" minX="24" minY="186" width="330" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checking status..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-55-JXQ">
-                                                    <frame key="frameInset" minX="103" minY="158" width="170" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                                                    <color key="textColor" red="0.9420356714" green="0.98387426300000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di7-FD-s4N">
@@ -191,6 +184,13 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checking status..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-55-JXQ">
+                                                    <frame key="frameInset" minX="103" minY="158" width="170" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <color key="textColor" red="0.9420356714" green="0.98387426300000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -206,10 +206,18 @@
                     <connections>
                         <outlet property="Status" destination="ccR-55-JXQ" id="BtQ-oK-WUR"/>
                         <outlet property="backroundimage" destination="dlX-oR-ZiA" id="G2F-sV-bhQ"/>
+                        <outlet property="backroundphoto" destination="dlX-oR-ZiA" id="LUF-2Z-WE5"/>
+                        <outlet property="countynametxt" destination="NR1-w6-sPK" id="Gms-m8-Lre"/>
                         <outlet property="datestring" destination="90m-jv-R5f" id="GuW-Pp-ZCc"/>
+                        <outlet property="datetxt" destination="90m-jv-R5f" id="jjI-eN-eUH"/>
+                        <outlet property="loadingactivity" destination="hbR-Ir-L2H" id="dLZ-0J-9UH"/>
+                        <outlet property="menubtn" destination="Di7-FD-s4N" id="sNb-CC-Pzk"/>
+                        <outlet property="moreinfobtn" destination="Lmn-pa-TbG" id="1Lk-D2-aWp"/>
                         <outlet property="opencircle" destination="FW3-kb-XQa" id="AFG-m4-t2X"/>
                         <outlet property="refreashview" destination="hbR-Ir-L2H" id="HHv-Ch-pYC"/>
                         <outlet property="statuscircle" destination="jPB-lN-33F" id="Yvb-Er-dUZ"/>
+                        <outlet property="ststuscircleimg" destination="jPB-lN-33F" id="VNL-Be-NoK"/>
+                        <outlet property="ststustxt" destination="ccR-55-JXQ" id="AhM-bD-IyX"/>
                         <outlet property="view3" destination="G6d-6s-HEQ" id="vcM-DK-PrF"/>
                     </connections>
                 </tableViewController>
@@ -220,7 +228,7 @@
         <!--More Information-->
         <scene sceneID="c1S-7b-AU6">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="MBd-Nx-I4Y" customClass="arciveviewTableViewController" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="MBd-Nx-I4Y" customClass="arciveviewTableViewController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="640" sectionHeaderHeight="28" sectionFooterHeight="28" id="zEU-Wp-wv4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,7 +339,7 @@
         <!--Settings-->
         <scene sceneID="yIh-Ca-Z2o">
             <objects>
-                <tableViewController storyboardIdentifier="ViewController3" clearsSelectionOnViewWillAppear="NO" id="05H-3a-KgR" customClass="settingsTableViewController" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ViewController3" clearsSelectionOnViewWillAppear="NO" id="05H-3a-KgR" customClass="settingsTableViewController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="611-xh-WqV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +351,7 @@
                                         <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CnB-hV-0zG" id="PmN-Jg-r8V">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyu-EU-bTi">
@@ -373,7 +381,7 @@
                                         <rect key="frame" x="0.0" y="164" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9DT-rK-cNW" id="aY3-yN-Dpe">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delayed Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofx-Yf-10k">
@@ -403,7 +411,7 @@
                                         <rect key="frame" x="0.0" y="208" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jCD-KT-RZy" id="AXZ-iq-Kpe">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Early Departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIC-45-5MR">
@@ -433,7 +441,7 @@
                                         <rect key="frame" x="0.0" y="252" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6xD-M1-u3x" id="NgD-md-RAy">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogr-Hr-Ozz">
@@ -463,7 +471,7 @@
                                         <rect key="frame" x="0.0" y="296" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bzz-Qq-uWQ" id="cp8-4I-Vmi">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-yt-4Yu">
@@ -497,7 +505,7 @@
                                         <rect key="frame" x="0.0" y="396" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Ad-PS-wHA" id="gSQ-sf-tKo">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wN-5X-bC6">
@@ -556,14 +564,14 @@
         <!--Status Arcive-->
         <scene sceneID="RwO-ov-3ua">
             <objects>
-                <tableViewController storyboardIdentifier="ViewController2" id="kGM-7R-PWP" customClass="statusarciveTableViewController" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ViewController2" id="kGM-7R-PWP" customClass="statusarciveTableViewController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="28" sectionFooterHeight="28" id="wIB-le-9O2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="58" id="bxm-ik-O9x" customClass="statusTableViewCell" customModule="FCPS_Alert" customModuleProvider="target">
-                                <frame key="frameInset" minY="92" width="375" height="58"/>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="58" id="bxm-ik-O9x" customClass="statusTableViewCell" customModule="Alert_widget" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bxm-ik-O9x" id="PZk-Jm-hdE">
                                     <frame key="frameInset" width="342" height="58"/>
@@ -617,7 +625,7 @@
         <!--FCPS Alert's Info-->
         <scene sceneID="QtC-g3-pS7">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" id="oN5-dX-BC5" customClass="ViewController" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController4" id="oN5-dX-BC5" customClass="ViewController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bls-yD-HZ0"/>
                         <viewControllerLayoutGuide type="bottom" id="qQz-4G-iBb"/>
@@ -683,7 +691,7 @@
         <!--My Navigation Controller-->
         <scene sceneID="Cgf-36-4e3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIm-BM-ped" customClass="MyNavigationController" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIm-BM-ped" customClass="MyNavigationController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KMN-Ne-0xq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
