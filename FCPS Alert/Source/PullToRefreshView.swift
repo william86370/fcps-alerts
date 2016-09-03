@@ -65,7 +65,7 @@ public class PullToRefreshView: UIView {
         self.arrow = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         self.arrow.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin]
         
-        self.arrow.image = UIImage(named: PullToRefreshConst.imageName, in: Bundle(for: self.dynamicType), compatibleWith: nil)
+        self.arrow.image = UIImage(named: PullToRefreshConst.imageName, in: Bundle(for: type(of: type), compatibleWith: nil))
         self.addSubview(arrow)
         
         self.indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse
+
 
 class statusarciveTableViewController: UITableViewController {
     
@@ -26,9 +26,9 @@ class statusarciveTableViewController: UITableViewController {
    
 
     override func viewDidLoad() {
-        navigationController?.navigationBar.barTintColor = UIColor.gray()
-        navigationController?.navigationBar.tintColor = UIColor.white()
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white()]
+        navigationController?.navigationBar.barTintColor = UIColor.gray
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
 
        
         let defaults = UserDefaults.standard
@@ -143,10 +143,10 @@ class statusarciveTableViewController: UITableViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         var indexpath : IndexPath = self.tableView.indexPathForSelectedRow!
         
-        let Dest = segue.destinationViewController as! arciveviewTableViewController
+        let Dest = segue.destination as! arciveviewTableViewController
         Dest.date = dates[indexpath.row]
         
         Dest.status = arcive[indexpath.row]

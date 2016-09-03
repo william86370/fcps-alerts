@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse
+
 import MessageUI
 
 class ViewController: UIViewController, MFMailComposeViewControllerDelegate {

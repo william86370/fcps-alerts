@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		93002E4C1D30A74B009FFFE6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */; };
-		93002E561D30A74B009FFFE6 /* Alert widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93002E491D30A74B009FFFE6 /* Alert widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		93002E5B1D30A7BD009FFFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934D07A81C17C7E6005D9810 /* Main.storyboard */; };
 		930DCC3A1C266F13003CA42B /* Info-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 930DCC391C266F13003CA42B /* Info-100-2.png */; };
 		931061A51C1D0D10009A74A1 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931061A31C1D0D10009A74A1 /* ENSideMenu.swift */; };
@@ -80,13 +79,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		93002E541D30A74B009FFFE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 934D07991C17C7E6005D9810 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93002E481D30A74B009FFFE6;
-			remoteInfo = "Alert widget";
-		};
 		934D07B91C17C7E6005D9810 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 934D07991C17C7E6005D9810 /* Project object */;
@@ -110,7 +102,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				93002E561D30A74B009FFFE6 /* Alert widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +403,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				93002E551D30A74B009FFFE6 /* PBXTargetDependency */,
 			);
 			name = "FCPS Alert";
 			productName = "FCPS Alert";
@@ -635,11 +625,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93002E551D30A74B009FFFE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 93002E481D30A74B009FFFE6 /* Alert widget */;
-			targetProxy = 93002E541D30A74B009FFFE6 /* PBXContainerItemProxy */;
-		};
 		934D07BA1C17C7E6005D9810 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 934D07A01C17C7E6005D9810 /* FCPS Alert */;
@@ -695,6 +680,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -713,6 +699,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

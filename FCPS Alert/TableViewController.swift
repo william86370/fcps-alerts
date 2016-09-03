@@ -8,7 +8,7 @@
 
 import UIKit
 import iAd
-import Parse
+
 
 class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerViewDelegate {
     @IBOutlet weak var datestring: UILabel!
@@ -41,21 +41,13 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     }
     
     
-    func rotateView() {
-        
-        UIView.animate(withDuration: 0.8, delay: 0, options: .curveLinear, animations: { () -> Void in
-            self.statuscircle.transform = self.statuscircle.transform.rotate(CGFloat(M_PI_2))
-            }) { (finished) -> Void in
-                self.rotateView()
-        }
-    }
     
     
     
     
     
     func setview() {
-        downloadparsedata(){
+        
             print("ran parse data")
             self.downloadwebsitedats(){(isResponse) -> Void in
                 print("ran both data")
@@ -80,14 +72,14 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
                     
                     let date = Date()
                     let calendar = Calendar.current
-                    let components = calendar.components([.day , .month , .year], from: date)
+                    let components = calendar.dateComponents([.day , .month , .year], from: date)
                     let year = components.year
                     let month = components.month
                     let day = components.day
-                    if(month < 10){
+                    if(month! < 10){
                          let month: String  = "0" + String(month)
                     }
-                    if(day < 10){
+                    if(day! < 10){
                         
                         let day: String = "0" + String(day)
                     }
@@ -104,55 +96,19 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
                 }
                 }
             }
+        
 
-        }
         
-    }
-    func getDayOfWeek(_ today:String)->Int? {
-        
-        let formatter  = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        if let todayDate = formatter.date(from: today) {
-            let myCalendar = Calendar(calendarIdentifier: Calendar.Identifier.gregorian)!
-            let myComponents = myCalendar.components(.weekday, from: todayDate)
-            let weekDay = myComponents.weekday
-            return weekDay
-        } else {
-            return nil
-        }
-    }
-    func downloadparsedata(_ completion:()->()){
-        
-        let query = PFQuery(className:"weather")
-        query.getObjectInBackground(withId: "Yp9VaaqsB8") {
-            (gameScore: PFObject?, error: NSError?) -> Void in
-            if error == nil && gameScore != nil {
-                let defaults = UserDefaults.standard
-                defaults.set(gameScore!["status"], forKey: "statusarray")
-                defaults.set(gameScore!["dates"], forKey: "datearray")
-                completion()
-            } else {
-                
-                print(error)
-                 let alertController = UIAlertController(title: "FCPS Alert's", message:
-                   "Sorry We Failed to connect to the server, please check your network settings and refreash the page.", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
-                
-                self.present(alertController, animated: true, completion: nil)
-                
-            }
-        }
+
         
         
         
-        
-    }
-    func downloadarrayofsites(_ completionHandler : ((array : [String]) -> Void)) {
+        func downloadarrayofsites( completionHandler : ((_ array : [String]) -> Void)) {
         let url = URL(string: "http://closings.victorlourng.com/dc/api/?data")
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
             let name3 = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) as! String
             let myarray = name3.components(separatedBy: ",")
-            completionHandler(array : myarray)
+            completionHandler(myarray)
         
         }
         task.resume()
@@ -161,7 +117,7 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     }
     
     
-    func downloadwebsitedats(_ completionHandler : ((isResponse : String) -> Void)) {
+    func downloadwebsitedats(_ completionHandler : (( _ isResponse : String) -> Void)) {
         
         print("it acualtty ran")
         let url = URL(string: "http://closings.victorlourng.com/dc/api/?data")
@@ -183,7 +139,7 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
                     
                     print("done")
                    
-                    completionHandler(isResponse : newstring)
+                    completionHandler(newstring)
                     
                     
                     
@@ -197,7 +153,7 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
             print("no interneot or opwn?")
             let defaults = UserDefaults.standard
             //defaults.setObject("open", forKey: "status")
-            completionHandler(isResponse : "open")
+            completionHandler("open")
            
         }
         task.resume()
@@ -212,29 +168,11 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     
     
     
-    func getdata(_ completion:()->()){
+    func getdata(_ completion:@escaping ()->()){
         
         
-        let query = PFQuery(className:"weather")
-        query.getObjectInBackground(withId: "Yp9VaaqsB8") {
-            (gameScore: PFObject?, error: NSError?) -> Void in
-            if error == nil && gameScore != nil {
-                let defaults = UserDefaults.standard
-                defaults.set(gameScore!["status"], forKey: "statusarray")
-                defaults.set(gameScore!["dates"], forKey: "datearray")
-                
-            } else {
-                print(error)
-                let alertController = UIAlertController(title: "FCPS Alert's", message:
-                   "Sorry We Failed to connect to the server, please check your network settings and refreash the page.", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
-                
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
         
-        
-        print("loaded data from parse")
+    
         
         
         /* let url = NSURL(string: "http://closings.victorlourng.com/dc/api/?data")!
@@ -414,8 +352,8 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     
     
     
-    @IBAction func learnmore(_ sender: AnyObject) {
-        UIApplication.shared().openURL(URL(string: "http://www.fcps.edu/news/weather.shtml")!)
+    func learnmore(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "http://www.fcps.edu/news/weather.shtml")!)
     }
     
     
@@ -424,7 +362,7 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     
     func changepage(){
        
-        self.getdata(){
+        
             DispatchQueue.main.async {
                 print("after receved")
                 let defaults = UserDefaults.standard
@@ -433,24 +371,25 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
                 
                 let status = name
                 if(status!.range(of: "Open 2 hours late") != nil){
-                    self.setdelayed()
+                    
                     print("set delayed")
 
                     
                 }
                 else if(status!.range(of: "Closed") != nil){
-                    self.setClosed()
+                    
                     print("set closed")
                     
                 }else{
-                    self.setopen()
+                   
                     print("set open")
                                     }
                   print("end")
             }
-        }
+        
         
     }
+    
     
     
     func handleRefresh(_ refreshControl: UIRefreshControl) {
@@ -466,7 +405,7 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     
     
     
-    @IBAction func toggleSideMenu(_ sender: AnyObject) {
+     func toggleSideMenu(_ sender: AnyObject) {
         toggleSideMenuView()
     }
     
@@ -508,7 +447,7 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
         
     }
     
-    override func viewDidLoad() {
+    func viewDidLoad() {
         randomimage()
         
         
@@ -547,19 +486,19 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    override func didReceiveMemoryWarning() {
+     func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
@@ -623,5 +562,5 @@ class TableViewController: UITableViewController, ENSideMenuDelegate, ADBannerVi
     // Pass the selected object to the new view controller.
     }
     */
-    
+    }
 }

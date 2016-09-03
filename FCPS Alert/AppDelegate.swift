@@ -8,8 +8,7 @@
 
 import UIKit
 import CoreData
-import Parse
-import Bolts
+
 
 
 @UIApplicationMain
