@@ -26,9 +26,16 @@ class schooltableview: UITableViewController {
     
     @IBOutlet weak var moreinfobtn: UILabel!
     
+    @IBOutlet weak var imageswitch: UISwitch!
     
+    @IBAction func imagechange(_ sender: Any) {
+        
+      
+    
+    }
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
