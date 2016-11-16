@@ -21,11 +21,13 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0.9.3.1</string>
+	<string>1.0.0.9.3.2</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>ads use bluetooth</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>get time and date</string>
 	<key>NSCameraUsageDescription</key>
