@@ -9,6 +9,7 @@
 import UIKit
 
 class schooltableview: UITableViewController {
+    
 
     @IBOutlet weak var countynametxt: UILabel!
     
@@ -24,19 +25,73 @@ class schooltableview: UITableViewController {
     
     @IBOutlet weak var backroundphoto: UIImageView!
     
-    @IBOutlet weak var moreinfobtn: UILabel!
+let currentDate = NSDate()
     
-    @IBOutlet weak var imageswitch: UISwitch!
+    let date = NSDate()
+    var ref: FIRDatabaseReference!
     
-    @IBAction func imagechange(_ sender: Any) {
-        
-      
+   
     
-    }
+    let dateFormatter = DateFormatter()
+    
+    
     
     override func viewDidLoad() {
-    
+        let calendar = NSCalendar.current
+        let hour = calendar.component(.hour, from: date as Date)
+                 ref = FIRDatabase.database().reference()
+        
+       
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let status = value?["status"] as? String ?? ""
+            print(status)
+            if(status.contains("open")){
+                self.ststustxt.text = "open"
+                self.loadingactivity.stopAnimating()
+                self.loadingactivity.hidesWhenStopped = true
+                self.ststuscircleimg.image = UIImage(named:"open circle.png")
+            }
+            if(status.contains("closed")){
+                self.ststustxt.text = "Closed"
+                self.loadingactivity.stopAnimating()
+                self.loadingactivity.hidesWhenStopped = true
+                self.ststuscircleimg.image = UIImage(named:"closedcircle.png")
+            }
+            
+            
+            
+            
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
+        
+        
+        
+  
+        
+        dateFormatter.locale = NSLocale.current
+        dateFormatter.dateStyle = DateFormatter.Style.long
+        datetxt.text = dateFormatter.string(from: currentDate as Date)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         super.viewDidLoad()
+        
+       
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8478378A1DCB777200976D0A /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847837891DCB777200976D0A /* Nuke.framework */; };
-		8478378D1DCB7AFC00976D0A /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8478378C1DCB7AFC00976D0A /* Nuke.framework */; };
-		8478378E1DCB7AFC00976D0A /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8478378C1DCB7AFC00976D0A /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8453DC361DDBF2CC007B18EE /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */; };
+		8453DC3A1DDBF446007B18EE /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC391DDBF446007B18EE /* settings.swift */; };
+		847837911DCC052B00976D0A /* new backrounds in Resources */ = {isa = PBXBuildFile; fileRef = 847837901DCC052B00976D0A /* new backrounds */; };
 		84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9F4791D7B55A50077EFC0 /* schooltableview.swift */; };
 		84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */; };
 		84D9F49B1D7DFB3B0077EFC0 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9F4961D7DFB3A0077EFC0 /* FirebaseAnalytics.framework */; };
@@ -100,7 +100,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8478378E1DCB7AFC00976D0A /* Nuke.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,9 +117,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		8453DC391DDBF446007B18EE /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 		8478377D1DCB6E3600976D0A /* KFSwiftImageLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KFSwiftImageLoader; path = "../../Downloads/KFSwiftImageLoader-master/KFSwiftImageLoader"; sourceTree = "<group>"; };
 		847837891DCB777200976D0A /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Nuke.framework"; sourceTree = "<group>"; };
-		8478378C1DCB7AFC00976D0A /* Nuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847837901DCC052B00976D0A /* new backrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "new backrounds"; sourceTree = "<group>"; };
 		84D9F4791D7B55A50077EFC0 /* schooltableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = schooltableview.swift; path = ../schooltableview.swift; sourceTree = "<group>"; };
 		84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84D9F4871D7DF8F70077EFC0 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = "FCPS Alert/Firebase.h"; sourceTree = "<group>"; };
@@ -216,7 +217,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8478378A1DCB777200976D0A /* Nuke.framework in Frameworks */,
 				84D9F4A71D7DFB980077EFC0 /* GoogleNetworkingUtilities.framework in Frameworks */,
 				84D9F4A31D7DFB890077EFC0 /* GoogleMobileAds.framework in Frameworks */,
 				84D9F4A11D7DFB700077EFC0 /* FirebaseDatabase.framework in Frameworks */,
@@ -235,7 +235,6 @@
 				934D07F11C17DB66005D9810 /* CoreGraphics.framework in Frameworks */,
 				84D9F49E1D7DFB3B0077EFC0 /* GoogleSymbolUtilities.framework in Frameworks */,
 				934D07EF1C17DB60005D9810 /* CFNetwork.framework in Frameworks */,
-				8478378D1DCB7AFC00976D0A /* Nuke.framework in Frameworks */,
 				84D9F49F1D7DFB3B0077EFC0 /* GoogleUtilities.framework in Frameworks */,
 				934D07ED1C17DB5B005D9810 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -277,7 +276,6 @@
 		934D07981C17C7E6005D9810 = {
 			isa = PBXGroup;
 			children = (
-				8478378C1DCB7AFC00976D0A /* Nuke.framework */,
 				84D9F4891D7DF9990077EFC0 /* swiftbridgeheader.h */,
 				84D9F4871D7DF8F70077EFC0 /* Firebase.h */,
 				84D9F4A41D7DFB980077EFC0 /* FirebaseStorage.framework */,
@@ -326,7 +324,9 @@
 				93A753E11C28A84B00704D25 /* Source */,
 				934D07A41C17C7E6005D9810 /* AppDelegate.swift */,
 				934D07A81C17C7E6005D9810 /* Main.storyboard */,
+				8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */,
 				84D9F4791D7B55A50077EFC0 /* schooltableview.swift */,
+				8453DC391DDBF446007B18EE /* settings.swift */,
 				84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */,
 				934D07AE1C17C7E6005D9810 /* Assets.xcassets */,
 				934D07B01C17C7E6005D9810 /* LaunchScreen.storyboard */,
@@ -359,6 +359,7 @@
 		934D07D51C17D5C7005D9810 /* fcps alerts textures */ = {
 			isa = PBXGroup;
 			children = (
+				847837901DCC052B00976D0A /* new backrounds */,
 				9330E8C31D305A9500EBD4C6 /* Swift-48.png */,
 				9330E8B61D30519400EBD4C6 /* snow1.png */,
 				9330E8C01D30521500EBD4C6 /* snow2.png */,
@@ -581,6 +582,7 @@
 				934D07DD1C17D5C7005D9810 /* greenopenbackround.png in Resources */,
 				931061AE1C1D1394009A74A1 /* Menu-512.png in Resources */,
 				935AE69D1C2339D90083F7A1 /* smallopencircle.png in Resources */,
+				847837911DCC052B00976D0A /* new backrounds in Resources */,
 				9332BB331D30464B000581CE /* willtestlogi1.png in Resources */,
 				931061B51C1D18C0009A74A1 /* delaybackround.png in Resources */,
 				9373D05E1C1B568E00395321 /* graybackround.png in Resources */,
@@ -620,8 +622,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				934D07AD1C17C7E6005D9810 /* FCPS_Alert.xcdatamodeld in Sources */,
+				8453DC361DDBF2CC007B18EE /* SwiftSpinner.swift in Sources */,
 				934D07A51C17C7E6005D9810 /* AppDelegate.swift in Sources */,
 				84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */,
+				8453DC3A1DDBF446007B18EE /* settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +810,7 @@
 				CODE_SIGN_ENTITLEMENTS = "FCPS Alert/FCPS Alert.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2U2K8SJ7Q7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -819,7 +824,7 @@
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs",
 				);
 				INFOPLIST_FILE = "FCPS Alert/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -839,6 +844,7 @@
 				CODE_SIGN_ENTITLEMENTS = "FCPS Alert/FCPS Alert.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2U2K8SJ7Q7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -852,7 +858,7 @@
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs",
 				);
 				INFOPLIST_FILE = "FCPS Alert/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
