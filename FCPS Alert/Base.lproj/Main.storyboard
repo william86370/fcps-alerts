@@ -152,7 +152,6 @@
                                                     </constraints>
                                                     <state key="normal" image="Menu-512.png"/>
                                                     <connections>
-                                                        <action selector="toggleSideMenu:" destination="AtC-va-0IQ" eventType="touchUpInside" id="R0O-gp-rAC"/>
                                                         <segue destination="05H-3a-KgR" kind="show" id="7Ei-eI-XRe"/>
                                                     </connections>
                                                 </button>
@@ -203,7 +202,6 @@
                                                     </constraints>
                                                     <state key="normal" image="Menu-512.png"/>
                                                     <connections>
-                                                        <action selector="toggleSideMenu:" destination="AtC-va-0IQ" eventType="touchUpInside" id="hPW-TY-Tno"/>
                                                         <segue destination="oN5-dX-BC5" kind="show" action="showDetailViewController:sender:" id="SPK-mY-Kt6"/>
                                                     </connections>
                                                 </button>
@@ -245,24 +243,18 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="Status" destination="ccR-55-JXQ" id="BtQ-oK-WUR"/>
-                        <outlet property="backroundimage" destination="dlX-oR-ZiA" id="G2F-sV-bhQ"/>
                         <outlet property="backroundphoto" destination="dlX-oR-ZiA" id="LUF-2Z-WE5"/>
                         <outlet property="countynametxt" destination="NR1-w6-sPK" id="Gms-m8-Lre"/>
-                        <outlet property="datestring" destination="90m-jv-R5f" id="GuW-Pp-ZCc"/>
                         <outlet property="datetxt" destination="90m-jv-R5f" id="jjI-eN-eUH"/>
                         <outlet property="loadingactivity" destination="hbR-Ir-L2H" id="dLZ-0J-9UH"/>
                         <outlet property="menubtn" destination="Di7-FD-s4N" id="sNb-CC-Pzk"/>
-                        <outlet property="refreashview" destination="hbR-Ir-L2H" id="HHv-Ch-pYC"/>
-                        <outlet property="statuscircle" destination="jPB-lN-33F" id="Yvb-Er-dUZ"/>
                         <outlet property="ststuscircleimg" destination="jPB-lN-33F" id="VNL-Be-NoK"/>
                         <outlet property="ststustxt" destination="ccR-55-JXQ" id="AhM-bD-IyX"/>
-                        <outlet property="view3" destination="G6d-6s-HEQ" id="vcM-DK-PrF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaN-Ht-FP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4046" y="782"/>
+            <point key="canvasLocation" x="3836" y="737"/>
         </scene>
         <!--More Information-->
         <scene sceneID="c1S-7b-AU6">
@@ -378,7 +370,7 @@
         <!--Settings-->
         <scene sceneID="yIh-Ca-Z2o">
             <objects>
-                <tableViewController storyboardIdentifier="ViewController3" clearsSelectionOnViewWillAppear="NO" id="05H-3a-KgR" customClass="settings" customModule="FCPS_Alert" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="05H-3a-KgR" customClass="settings" customModule="FCPS_Alert" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="611-xh-WqV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -440,9 +432,6 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k0y-Vt-Lq5">
                                                     <rect key="frame" x="312" y="6.6666666666666661" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="open:" destination="05H-3a-KgR" eventType="valueChanged" id="LGG-YN-Aro"/>
-                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -472,9 +461,6 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="csL-Ul-RsO">
                                                     <rect key="frame" x="312" y="6.6666666666666661" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="delayed:" destination="05H-3a-KgR" eventType="valueChanged" id="eOY-4V-2KI"/>
-                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -504,9 +490,6 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-oR-BsK">
                                                     <rect key="frame" x="312" y="6.6666666666666661" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="early:" destination="05H-3a-KgR" eventType="valueChanged" id="vPb-IX-HtO"/>
-                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -536,9 +519,6 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yk8-24-ode">
                                                     <rect key="frame" x="312" y="6.6666666666666661" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="closed:" destination="05H-3a-KgR" eventType="valueChanged" id="15C-PP-Mt5"/>
-                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -568,9 +548,6 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5EI-2e-68r">
                                                     <rect key="frame" x="312" y="6.6666666666666661" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="other:" destination="05H-3a-KgR" eventType="valueChanged" id="DtK-nJ-baz"/>
-                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -624,31 +601,18 @@
                     <navigationItem key="navigationItem" title="Settings" id="XGp-Mx-CTZ">
                         <barButtonItem key="leftBarButtonItem" image="Menu-25.png" id="cJn-Bl-jUg">
                             <connections>
-                                <action selector="selectmenu:" destination="05H-3a-KgR" id="Qvr-Gc-UK3"/>
-                                <segue destination="cIm-BM-ped" kind="show" id="2sd-fD-DPh"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="Ij4-bE-w5t">
-                            <connections>
-                                <action selector="save:" destination="05H-3a-KgR" id="55g-gW-Ckg"/>
+                                <segue destination="cIm-BM-ped" kind="show" id="VDg-LS-rIg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="closed" destination="Yk8-24-ode" id="nQT-IW-I0E"/>
-                        <outlet property="delayedarival" destination="csL-Ul-RsO" id="XbZ-aH-jDu"/>
-                        <outlet property="earlydeparture" destination="cbJ-oR-BsK" id="MaL-1X-z1d"/>
-                        <outlet property="nightlyopen" destination="41G-6l-dP5" id="a5p-M9-PiO"/>
-                        <outlet property="open" destination="k0y-Vt-Lq5" id="b55-Af-qEt"/>
-                        <outlet property="other" destination="5EI-2e-68r" id="ivN-bZ-MUF"/>
-                        <outlet property="photos" destination="O40-La-K8h" id="Qht-1M-tih"/>
-                        <outlet property="savebtn" destination="Ij4-bE-w5t" id="e3a-Gb-z2W"/>
+                        <outlet property="photos" destination="O40-La-K8h" id="QEx-Yo-PGO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iur-Ar-Zjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3424" y="781"/>
+            <point key="canvasLocation" x="3164" y="833"/>
         </scene>
         <!--Status Arcive-->
         <scene sceneID="RwO-ov-3ua">
@@ -714,7 +678,7 @@
         <!--FCPS Alert's Info-->
         <scene sceneID="QtC-g3-pS7">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" id="oN5-dX-BC5" customClass="ViewController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController4" id="oN5-dX-BC5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bls-yD-HZ0"/>
                         <viewControllerLayoutGuide type="bottom" id="qQz-4G-iBb"/>
@@ -726,16 +690,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2K-iK-lEF">
                                 <rect key="frame" x="85" y="164" width="166" height="30"/>
                                 <state key="normal" title="Find An issue email Me "/>
-                                <connections>
-                                    <action selector="sendEmailButtonTapped:" destination="oN5-dX-BC5" eventType="touchUpInside" id="i21-OO-B8i"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYz-s9-XCQ">
                                 <rect key="frame" x="39" y="191" width="288" height="30"/>
                                 <state key="normal" title="Want to Give feedback Email email me"/>
-                                <connections>
-                                    <action selector="sendEmailButtonTapped:" destination="oN5-dX-BC5" eventType="touchUpInside" id="hCm-6W-nrQ"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FCPS Alert's Open Beta 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rST-bu-92F">
                                 <rect key="frame" x="44" y="88" width="248" height="21"/>
@@ -762,6 +720,14 @@
                                     <constraint firstAttribute="width" constant="48" id="zCd-Mu-xp6"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX1-FP-XVU">
+                                <rect key="frame" x="160" y="304" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="cIm-BM-ped" kind="show" id="GJR-ao-JFQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -797,12 +763,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAU-gg-Nfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4772" y="809"/>
+            <point key="canvasLocation" x="4785" y="808"/>
         </scene>
-        <!--My Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="Cgf-36-4e3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIm-BM-ped" customClass="MyNavigationController" customModule="Alert_widget" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIm-BM-ped" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KMN-Ne-0xq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -830,6 +796,6 @@
         <image name="willtestlogi1.png" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z3Q-rU-wKB"/>
+        <segue reference="VDg-LS-rIg"/>
     </inferredMetricsTieBreakers>
 </document>

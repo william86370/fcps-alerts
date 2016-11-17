@@ -28,7 +28,7 @@ class schooltableview: UITableViewController {
 let currentDate = NSDate()
     
     let date = NSDate()
-    var ref: FIRDatabaseReference!
+    
     
    
     
@@ -37,8 +37,13 @@ let currentDate = NSDate()
     
     
     override func viewDidLoad() {
+       //set status bar 
+        self.navigationController?.isNavigationBarHidden = true
+        
         let calendar = NSCalendar.current
         let hour = calendar.component(.hour, from: date as Date)
+        
+        var ref: FIRDatabaseReference!
                  ref = FIRDatabase.database().reference()
         
        
@@ -48,7 +53,7 @@ let currentDate = NSDate()
             let status = value?["status"] as? String ?? ""
             print(status)
             if(status.contains("open")){
-                self.ststustxt.text = "open"
+                self.ststustxt.text = "FCPS Is Open"
                 self.loadingactivity.stopAnimating()
                 self.loadingactivity.hidesWhenStopped = true
                 self.ststuscircleimg.image = UIImage(named:"open circle.png")

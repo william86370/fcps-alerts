@@ -12,6 +12,7 @@ class settings: UITableViewController {
 
     @IBOutlet weak var photos: UISwitch!
     override func viewDidLoad() {
+        self.navigationController?.isNavigationBarHidden = false
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations

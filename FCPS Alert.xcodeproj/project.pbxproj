@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		8453DC361DDBF2CC007B18EE /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */; };
 		8453DC3A1DDBF446007B18EE /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC391DDBF446007B18EE /* settings.swift */; };
+		8453DC451DDD5437007B18EE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC3B1DDD5437007B18EE /* 1.jpg */; };
+		8453DC461DDD5437007B18EE /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC3C1DDD5437007B18EE /* 3.jpg */; };
+		8453DC471DDD5437007B18EE /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC3D1DDD5437007B18EE /* 4.png */; };
+		8453DC481DDD5437007B18EE /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC3E1DDD5437007B18EE /* 5.jpg */; };
+		8453DC491DDD5437007B18EE /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC3F1DDD5437007B18EE /* 6.jpg */; };
+		8453DC4A1DDD5437007B18EE /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC401DDD5437007B18EE /* 7.jpg */; };
+		8453DC4B1DDD5437007B18EE /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC411DDD5437007B18EE /* 8.jpg */; };
+		8453DC4C1DDD5437007B18EE /* snowbackround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC421DDD5437007B18EE /* snowbackround.jpg */; };
+		8453DC4D1DDD5437007B18EE /* snowbackround2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC431DDD5437007B18EE /* snowbackround2.jpeg */; };
+		8453DC4E1DDD5437007B18EE /* snowbackround3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC441DDD5437007B18EE /* snowbackround3.jpg */; };
+		8453DC501DDD5C78007B18EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC4F1DDD5C78007B18EE /* AppDelegate.swift */; };
 		847837911DCC052B00976D0A /* new backrounds in Resources */ = {isa = PBXBuildFile; fileRef = 847837901DCC052B00976D0A /* new backrounds */; };
 		84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9F4791D7B55A50077EFC0 /* schooltableview.swift */; };
 		84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */; };
@@ -42,7 +53,6 @@
 		933966E01C21C7EB005A38A5 /* open circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 933966DF1C21C7EB005A38A5 /* open circle.png */; };
 		9343FEF81C1B6CEF004F17D9 /* loadingcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9343FEF71C1B6CEF004F17D9 /* loadingcircle.png */; };
 		9343FEFC1C1BF99A004F17D9 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9343FEFB1C1BF99A004F17D9 /* splash screen.png */; };
-		934D07A51C17C7E6005D9810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934D07A41C17C7E6005D9810 /* AppDelegate.swift */; };
 		934D07AA1C17C7E6005D9810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934D07A81C17C7E6005D9810 /* Main.storyboard */; };
 		934D07AD1C17C7E6005D9810 /* FCPS_Alert.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 934D07AB1C17C7E6005D9810 /* FCPS_Alert.xcdatamodeld */; };
 		934D07AF1C17C7E6005D9810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934D07AE1C17C7E6005D9810 /* Assets.xcassets */; };
@@ -119,6 +129,17 @@
 /* Begin PBXFileReference section */
 		8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		8453DC391DDBF446007B18EE /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
+		8453DC3B1DDD5437007B18EE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "new backrounds/1.jpg"; sourceTree = "<group>"; };
+		8453DC3C1DDD5437007B18EE /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "new backrounds/3.jpg"; sourceTree = "<group>"; };
+		8453DC3D1DDD5437007B18EE /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = "new backrounds/4.png"; sourceTree = "<group>"; };
+		8453DC3E1DDD5437007B18EE /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = "new backrounds/5.jpg"; sourceTree = "<group>"; };
+		8453DC3F1DDD5437007B18EE /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = "new backrounds/6.jpg"; sourceTree = "<group>"; };
+		8453DC401DDD5437007B18EE /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = "new backrounds/7.jpg"; sourceTree = "<group>"; };
+		8453DC411DDD5437007B18EE /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = "new backrounds/8.jpg"; sourceTree = "<group>"; };
+		8453DC421DDD5437007B18EE /* snowbackround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowbackround.jpg; path = "new backrounds/snowbackround.jpg"; sourceTree = "<group>"; };
+		8453DC431DDD5437007B18EE /* snowbackround2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowbackround2.jpeg; path = "new backrounds/snowbackround2.jpeg"; sourceTree = "<group>"; };
+		8453DC441DDD5437007B18EE /* snowbackround3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowbackround3.jpg; path = "new backrounds/snowbackround3.jpg"; sourceTree = "<group>"; };
+		8453DC4F1DDD5C78007B18EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8478377D1DCB6E3600976D0A /* KFSwiftImageLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KFSwiftImageLoader; path = "../../Downloads/KFSwiftImageLoader-master/KFSwiftImageLoader"; sourceTree = "<group>"; };
 		847837891DCB777200976D0A /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Nuke.framework"; sourceTree = "<group>"; };
 		847837901DCC052B00976D0A /* new backrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "new backrounds"; sourceTree = "<group>"; };
@@ -164,7 +185,6 @@
 		9343FEF71C1B6CEF004F17D9 /* loadingcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingcircle.png; sourceTree = "<group>"; };
 		9343FEFB1C1BF99A004F17D9 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
 		934D07A11C17C7E6005D9810 /* FCPS Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCPS Alert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		934D07A41C17C7E6005D9810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		934D07A91C17C7E6005D9810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		934D07AC1C17C7E6005D9810 /* FCPS_Alert.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FCPS_Alert.xcdatamodel; sourceTree = "<group>"; };
 		934D07AE1C17C7E6005D9810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -320,9 +340,9 @@
 		934D07A31C17C7E6005D9810 /* FCPS Alert */ = {
 			isa = PBXGroup;
 			children = (
+				8453DC4F1DDD5C78007B18EE /* AppDelegate.swift */,
 				9330E8C21D30564100EBD4C6 /* FCPS Alert.entitlements */,
 				93A753E11C28A84B00704D25 /* Source */,
-				934D07A41C17C7E6005D9810 /* AppDelegate.swift */,
 				934D07A81C17C7E6005D9810 /* Main.storyboard */,
 				8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */,
 				84D9F4791D7B55A50077EFC0 /* schooltableview.swift */,
@@ -359,6 +379,16 @@
 		934D07D51C17D5C7005D9810 /* fcps alerts textures */ = {
 			isa = PBXGroup;
 			children = (
+				8453DC3B1DDD5437007B18EE /* 1.jpg */,
+				8453DC3C1DDD5437007B18EE /* 3.jpg */,
+				8453DC3D1DDD5437007B18EE /* 4.png */,
+				8453DC3E1DDD5437007B18EE /* 5.jpg */,
+				8453DC3F1DDD5437007B18EE /* 6.jpg */,
+				8453DC401DDD5437007B18EE /* 7.jpg */,
+				8453DC411DDD5437007B18EE /* 8.jpg */,
+				8453DC421DDD5437007B18EE /* snowbackround.jpg */,
+				8453DC431DDD5437007B18EE /* snowbackround2.jpeg */,
+				8453DC441DDD5437007B18EE /* snowbackround3.jpg */,
 				847837901DCC052B00976D0A /* new backrounds */,
 				9330E8C31D305A9500EBD4C6 /* Swift-48.png */,
 				9330E8B61D30519400EBD4C6 /* snow1.png */,
@@ -556,38 +586,48 @@
 				931061B01C1D1628009A74A1 /* unnamed.png in Resources */,
 				931061B61C1D18C0009A74A1 /* delayovel.png in Resources */,
 				9330E8C41D305A9500EBD4C6 /* Swift-48.png in Resources */,
+				8453DC4E1DDD5437007B18EE /* snowbackround3.jpg in Resources */,
 				934D07B21C17C7E6005D9810 /* LaunchScreen.storyboard in Resources */,
 				9330E8BD1D30519400EBD4C6 /* snow3.png in Resources */,
+				8453DC491DDD5437007B18EE /* 6.jpg in Resources */,
 				84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */,
 				93F5D7621C5471DA008957A9 /* weekend backround.png in Resources */,
 				93A753ED1C28ACAC00704D25 /* delayedsmallcircle.png in Resources */,
 				9330E8BB1D30519400EBD4C6 /* snow1.png in Resources */,
+				8453DC4A1DDD5437007B18EE /* 7.jpg in Resources */,
 				93A753E01C27A52200704D25 /* Launch Screen.storyboard in Resources */,
 				9343FEFC1C1BF99A004F17D9 /* splash screen.png in Resources */,
+				8453DC4C1DDD5437007B18EE /* snowbackround.jpg in Resources */,
 				934D07AF1C17C7E6005D9810 /* Assets.xcassets in Resources */,
 				9330E8C11D30521500EBD4C6 /* snow2.png in Resources */,
 				93A753DC1C27A39D00704D25 /* y6DXcMc.jpg in Resources */,
+				8453DC461DDD5437007B18EE /* 3.jpg in Resources */,
 				9343FEF81C1B6CEF004F17D9 /* loadingcircle.png in Resources */,
 				931061B21C1D1677009A74A1 /* Menu-512-2.png in Resources */,
 				93A753E61C28A84B00704D25 /* pulltorefresharrow.png in Resources */,
 				933966E01C21C7EB005A38A5 /* open circle.png in Resources */,
 				935AE69B1C2339D10083F7A1 /* smallclosedcircle.png in Resources */,
 				934D07DC1C17D5C7005D9810 /* downarrow.png in Resources */,
+				8453DC471DDD5437007B18EE /* 4.png in Resources */,
 				93F5D7631C5471DA008957A9 /* weekend circle.png in Resources */,
 				9330E8BF1D30519400EBD4C6 /* snow5.png in Resources */,
 				934D07AA1C17C7E6005D9810 /* Main.storyboard in Resources */,
 				93A753F21C28F5AB00704D25 /* snowflake.png in Resources */,
 				934D07DB1C17D5C7005D9810 /* closedcircle.png in Resources */,
+				8453DC4B1DDD5437007B18EE /* 8.jpg in Resources */,
 				9330E8BE1D30519400EBD4C6 /* snow4.png in Resources */,
+				8453DC451DDD5437007B18EE /* 1.jpg in Resources */,
 				934D07DD1C17D5C7005D9810 /* greenopenbackround.png in Resources */,
 				931061AE1C1D1394009A74A1 /* Menu-512.png in Resources */,
 				935AE69D1C2339D90083F7A1 /* smallopencircle.png in Resources */,
 				847837911DCC052B00976D0A /* new backrounds in Resources */,
 				9332BB331D30464B000581CE /* willtestlogi1.png in Resources */,
 				931061B51C1D18C0009A74A1 /* delaybackround.png in Resources */,
+				8453DC4D1DDD5437007B18EE /* snowbackround2.jpeg in Resources */,
 				9373D05E1C1B568E00395321 /* graybackround.png in Resources */,
 				930DCC3A1C266F13003CA42B /* Info-100-2.png in Resources */,
 				934D07DF1C17D5C7005D9810 /* redclosedbackround.png in Resources */,
+				8453DC481DDD5437007B18EE /* 5.jpg in Resources */,
 				9320E7011C1DF43C00971BE8 /* Menu-25.png in Resources */,
 				93A753DE1C27A42B00704D25 /* resize.jpeg in Resources */,
 			);
@@ -623,8 +663,8 @@
 			files = (
 				934D07AD1C17C7E6005D9810 /* FCPS_Alert.xcdatamodeld in Sources */,
 				8453DC361DDBF2CC007B18EE /* SwiftSpinner.swift in Sources */,
-				934D07A51C17C7E6005D9810 /* AppDelegate.swift in Sources */,
 				84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */,
+				8453DC501DDD5C78007B18EE /* AppDelegate.swift in Sources */,
 				8453DC3A1DDBF446007B18EE /* settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
