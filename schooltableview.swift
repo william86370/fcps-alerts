@@ -25,24 +25,43 @@ class schooltableview: UITableViewController {
     
     @IBOutlet weak var backroundphoto: UIImageView!
     
-let currentDate = NSDate()
+    let currentDate = NSDate()
     
     let date = NSDate()
     
     
-   
     
-    let dateFormatter = DateFormatter()
+    
+    
+    
+    let dayTimePeriodFormatter = DateFormatter()
+    
+    
+    
+    let calendar = NSCalendar.current
     
     
     
     override func viewDidLoad() {
-       //set status bar 
+        //set backround based on hour
+        dayTimePeriodFormatter.dateFormat = "H"
+        let dateString = dayTimePeriodFormatter.string(from: date as Date)
+        print(dateString)
+        let dateint = Int(dateString)
+        if (dateint! >= 0 && dateint! <= 8){
+     backroundphoto.image=UIImage(named: "snowbackround3.jpg")
+        }
+        if (dateint! >= 20 && dateint! <= 24){
+            backroundphoto.image=UIImage(named: "snowbackround3.jpg")
+        }
+        
+        
+        
+        
+       //set status bar
         self.navigationController?.isNavigationBarHidden = true
         
-        let calendar = NSCalendar.current
-        let hour = calendar.component(.hour, from: date as Date)
-        
+        //connect to firbase and pull down closeing info
         var ref: FIRDatabaseReference!
                  ref = FIRDatabase.database().reference()
         
@@ -53,7 +72,7 @@ let currentDate = NSDate()
             let status = value?["status"] as? String ?? ""
             print(status)
             if(status.contains("open")){
-                self.ststustxt.text = "FCPS Is Open"
+                self.ststustxt.text = "FCPS Schools Are Open"
                 self.loadingactivity.stopAnimating()
                 self.loadingactivity.hidesWhenStopped = true
                 self.ststuscircleimg.image = UIImage(named:"open circle.png")
@@ -80,10 +99,7 @@ let currentDate = NSDate()
         
   
         
-        dateFormatter.locale = NSLocale.current
-        dateFormatter.dateStyle = DateFormatter.Style.long
-        datetxt.text = dateFormatter.string(from: currentDate as Date)
-
+      
         
         
         
