@@ -2,7 +2,7 @@
 //  schooltableview.swift
 //  FCPS Alert
 //
-//  Created by Admin on 9/3/16.
+//  Created by William Wright on 9/3/16.
 //  Copyright © 2016 A.R.C software and enginering. All rights reserved.
 //
 
@@ -31,13 +31,12 @@ class schooltableview: UITableViewController {
     
     
     
+    //get todays date
+    let todaydate : NSDate = NSDate()
+    let dateFormatter = DateFormatter()
     
-    
-    
+    //declare twodiffrent date values for both date requirments
     let dayTimePeriodFormatter = DateFormatter()
-    
-    
-    
     let calendar = NSCalendar.current
     
     
@@ -54,73 +53,80 @@ class schooltableview: UITableViewController {
         if (dateint! >= 20 && dateint! <= 24){
             backroundphoto.image=UIImage(named: "snowbackround3.jpg")
         }
+        //end backround change
         
         
-        
+        //code to change the date lable to the current date
+        dateFormatter.dateFormat = "MMMM dd, yyyy"
+        datetxt.text = (dateFormatter.string(from: todaydate as Date))
+        //end
         
        //set status bar
-        self.navigationController?.isNavigationBarHidden = true
-        
-        //connect to firbase and pull down closeing info
-        var ref: FIRDatabaseReference!
-                 ref = FIRDatabase.database().reference()
-        
-       
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            let value = snapshot.value as? NSDictionary
-            let status = value?["status"] as? String ?? ""
-            print(status)
-            if(status.contains("open")){
-                self.ststustxt.text = "FCPS Schools Are Open"
-                self.loadingactivity.stopAnimating()
-                self.loadingactivity.hidesWhenStopped = true
-                self.ststuscircleimg.image = UIImage(named:"open circle.png")
-            }
-            if(status.contains("closed")){
-                self.ststustxt.text = "Closed"
-                self.loadingactivity.stopAnimating()
-                self.loadingactivity.hidesWhenStopped = true
-                self.ststuscircleimg.image = UIImage(named:"closedcircle.png")
-            }
-            
-            
-            
-            
-            
-            // ...
-        }) { (error) in
-            print(error.localizedDescription)
-        }
+        //we acully decided to keep the status bar might hide it later
+        //self.navigationController?.isNavigationBarHidden = false
         
         
         
-        
-        
-  
-        
-      
-        
-        
-        
-        
-        
-        
-        
-        
+        //load firebase info from firebase class
+        firebase()
         
         
         super.viewDidLoad()
-        
-       
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    func firebase(){
+        //connect to firbase and pull down closeing info
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let status = value?["status"] as? String ?? ""
+            //print the status to concel for logging
+            //print(status) works
+            
+            //code to chek if the school is open based on fairebase varable
+            if(status.contains("open")){
+                self.ststustxt.text = "FCPS Schools Are Open"
+                self.loadingactivity.stopAnimating()
+                self.loadingactivity.hidesWhenStopped = true
+                self.ststuscircleimg.image = UIImage(named:"open circle.png")
+            }
+            //code for closeings
+            if(status.contains("closed")){
+                self.ststustxt.text = "FCPS Schools Are Closed"
+                self.loadingactivity.stopAnimating()
+                self.loadingactivity.hidesWhenStopped = true
+                self.ststuscircleimg.image = UIImage(named:"closedcircle.png")
+            }
+            //code for delayed
+            if(status.contains("delayed")){
+                self.ststustxt.text = "FCPS Schools Are Open 2 Hours Late"
+                self.loadingactivity.stopAnimating()
+                self.loadingactivity.hidesWhenStopped = true
+                self.ststuscircleimg.image = UIImage(named:"delayovel.png")
+            }
+            //code incase of firebase error in my server side
+            if(status.contains("error")){
+                self.ststustxt.text = "FCPS Alerts is haveing issues connecting to the server "
+                self.loadingactivity.stopAnimating()
+                SwiftSpinner.show("Reconecting to FCPS Server").addTapHandler({
+                    
+                    SwiftSpinner.hide()
+                }, subtitle: "Tap to hide while connecting! This will affect only the current operation.")
+            }
+        }) { (error) in
+            //print the error to log
+            print(error.localizedDescription)
+        }
+//end firebase method
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -130,11 +136,13 @@ class schooltableview: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        //becuase we are useing a table view this must be one
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        //becuase we are useing a table view this must be one
         return 1
     }
 

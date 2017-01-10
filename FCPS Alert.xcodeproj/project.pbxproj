@@ -42,7 +42,6 @@
 		931061B61C1D18C0009A74A1 /* delayovel.png in Resources */ = {isa = PBXBuildFile; fileRef = 931061B41C1D18C0009A74A1 /* delayovel.png */; };
 		931248A41C23127B0095B70A /* clickbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 931248A31C23127B0095B70A /* clickbox.png */; };
 		9320E7011C1DF43C00971BE8 /* Menu-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 9320E7001C1DF43C00971BE8 /* Menu-25.png */; };
-		9329DABA1C2127F9001B689B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9329DAB91C2127F9001B689B /* iAd.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9330E8BB1D30519400EBD4C6 /* snow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9330E8B61D30519400EBD4C6 /* snow1.png */; };
 		9330E8BD1D30519400EBD4C6 /* snow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9330E8B81D30519400EBD4C6 /* snow3.png */; };
 		9330E8BE1D30519400EBD4C6 /* snow4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9330E8B91D30519400EBD4C6 /* snow4.png */; };
@@ -240,7 +239,6 @@
 				84D9F4A71D7DFB980077EFC0 /* GoogleNetworkingUtilities.framework in Frameworks */,
 				84D9F4A31D7DFB890077EFC0 /* GoogleMobileAds.framework in Frameworks */,
 				84D9F4A11D7DFB700077EFC0 /* FirebaseDatabase.framework in Frameworks */,
-				9329DABA1C2127F9001B689B /* iAd.framework in Frameworks */,
 				934D07FF1C17DBA0005D9810 /* libsqlite3.tbd in Frameworks */,
 				934D07FD1C17DB93005D9810 /* libz.tbd in Frameworks */,
 				934D07FB1C17DB86005D9810 /* SystemConfiguration.framework in Frameworks */,

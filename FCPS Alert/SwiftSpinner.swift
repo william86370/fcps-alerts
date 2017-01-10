@@ -2,7 +2,7 @@
 //  SwiftSpinner.swift
 //  FCPS Alert
 //
-//  Created by Admin on 11/16/16.
+//  Created by William Wright on 11/16/16.
 //  Copyright © 2016 A.R.C software and enginering. All rights reserved.
 
 
