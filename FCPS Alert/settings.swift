@@ -89,29 +89,47 @@ class settings: UITableViewController {
     
     
     override func viewDidLoad() {
-        
+        //check if its nil
         if(defaults.bool(forKey: "opench") != nil ){
+            //if its not nil check for true or false values
             if(defaults.bool(forKey: "opench") == true){
                 openswitch.setOn(true, animated: false)
             }else{
                  openswitch.setOn(false, animated: false)
             }
-            
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        self.navigationController?.isNavigationBarHidden = false
+        if(defaults.bool(forKey: "delayedch") != nil ){
+            if(defaults.bool(forKey: "delayedch") == true){
+                delayedswitch.setOn(true, animated: false)
+            }else{
+                delayedswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "earlych") != nil ){
+            if(defaults.bool(forKey: "earlych") == true){
+                departureswitch.setOn(true, animated: false)
+            }else{
+               departureswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "closedch") != nil ){
+            if(defaults.bool(forKey: "closedch") == true){
+                clsoedswitch.setOn(true, animated: false)
+            }else{
+                clsoedswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "otherch") != nil ){
+            if(defaults.bool(forKey: "otherch") == true){
+                otherswitch.setOn(true, animated: false)
+            }else{
+               otherswitch.setOn(false, animated: false)
+            }
+        }
+        //end of loading in the buttons
+   
+        //depeds on wether or not to hide the navagation bar
+       //self.navigationController?.isNavigationBarHidden = false
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
