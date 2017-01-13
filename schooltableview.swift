@@ -62,8 +62,9 @@ class schooltableview: UITableViewController {
         //end
         
        //set status bar
-        //we acully decided to keep the status bar might hide it later
-        //self.navigationController?.isNavigationBarHidden = false
+        //right now this disbales the status bar for this page
+        self.navigationController!.navigationBar.isTranslucent = true
+        self.navigationController?.isNavigationBarHidden = true
         
         
         

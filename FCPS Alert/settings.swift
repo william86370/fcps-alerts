@@ -129,7 +129,7 @@ class settings: UITableViewController {
         //end of loading in the buttons
    
         //depeds on wether or not to hide the navagation bar
-       //self.navigationController?.isNavigationBarHidden = false
+       self.navigationController?.isNavigationBarHidden = false
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
