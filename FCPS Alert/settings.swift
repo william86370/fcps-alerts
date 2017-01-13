@@ -9,10 +9,127 @@
 import UIKit
 
 class settings: UITableViewController {
-
+    //start declaration
     @IBOutlet weak var photos: UISwitch!
+    //open switch
+    @IBOutlet weak var openswitch: UISwitch!
+    //delayed switch
+    @IBOutlet weak var delayedswitch: UISwitch!
+    //earlydepartureswitch
+    @IBOutlet weak var departureswitch: UISwitch!
+    //closed switch
+    @IBOutlet weak var clsoedswitch: UISwitch!
+    //othermsgsitch
+    @IBOutlet weak var otherswitch: UISwitch!
+    //end declaration
+    
+    
+   
+    let defaults = UserDefaults.standard
+    
+    //start methods
+    @IBAction func opench(_ sender: UISwitch) {
+        //check the state of the button
+        if(sender.isOn == true){
+            //saves if on
+            defaults.setValue(true, forKey: "opench")
+        }else{
+            //saves if off
+            defaults.setValue(false, forKey: "opench")
+        }
+            }
+    @IBAction func delayedch(_ sender: UISwitch) {
+        //check the state of the button
+        if(sender.isOn == true){
+            //saves if on
+            defaults.setValue(true, forKey: "delayedch")
+        }else{
+            //saves if off
+            defaults.setValue(false, forKey: "delayedch")
+        }
+    }
+    @IBAction func earlydeparturech(_ sender: UISwitch) {
+        //check the state of the button
+        if(sender.isOn == true){
+            //saves if on
+            defaults.setValue(true, forKey: "earlych")
+        }else{
+            //saves if off
+            defaults.setValue(false, forKey: "earlych")
+        }
+    }
+    @IBAction func closedch(_ sender: UISwitch) {
+        //check the state of the button
+        if(sender.isOn == true){
+            //saves if on
+            defaults.setValue(true, forKey: "closedch")
+        }else{
+            //saves if off
+            defaults.setValue(false, forKey: "closedch")
+        }
+    }
+    @IBAction func othermessagech(_ sender: UISwitch) {
+        //check the state of the button
+        if(sender.isOn == true){
+            //saves if on
+            defaults.setValue(true, forKey: "otherch")
+        }else{
+            //saves if off
+            defaults.setValue(false, forKey: "otherch")
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
-        self.navigationController?.isNavigationBarHidden = false
+        //check if its nil
+        if(defaults.bool(forKey: "opench") != nil ){
+            //if its not nil check for true or false values
+            if(defaults.bool(forKey: "opench") == true){
+                openswitch.setOn(true, animated: false)
+            }else{
+                 openswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "delayedch") != nil ){
+            if(defaults.bool(forKey: "delayedch") == true){
+                delayedswitch.setOn(true, animated: false)
+            }else{
+                delayedswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "earlych") != nil ){
+            if(defaults.bool(forKey: "earlych") == true){
+                departureswitch.setOn(true, animated: false)
+            }else{
+               departureswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "closedch") != nil ){
+            if(defaults.bool(forKey: "closedch") == true){
+                clsoedswitch.setOn(true, animated: false)
+            }else{
+                clsoedswitch.setOn(false, animated: false)
+            }
+        }
+        if(defaults.bool(forKey: "otherch") != nil ){
+            if(defaults.bool(forKey: "otherch") == true){
+                otherswitch.setOn(true, animated: false)
+            }else{
+               otherswitch.setOn(false, animated: false)
+            }
+        }
+        //end of loading in the buttons
+   
+        //depeds on wether or not to hide the navagation bar
+       self.navigationController?.isNavigationBarHidden = false
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations

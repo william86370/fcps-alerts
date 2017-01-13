@@ -3,19 +3,8 @@
 import UIKit
 import Foundation
 
-let currentDate = NSDate()
+let todaydate : NSDate = NSDate()
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "MMMM dd, yyyy"
+print(dateFormatter.string(from: todaydate as Date))
 
-let date = NSDate()
-
-
-
-
-
-
-let dayTimePeriodFormatter = DateFormatter()
-dayTimePeriodFormatter.dateFormat = "H"
-
-
-let calendar = NSCalendar.current
-
-let dateString = dayTimePeriodFormatter.string(from: date as Date)
