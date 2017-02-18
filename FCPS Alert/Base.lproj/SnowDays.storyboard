@@ -238,11 +238,12 @@
                         <outlet property="menubtn" destination="Di7-FD-s4N" id="sNb-CC-Pzk"/>
                         <outlet property="ststuscircleimg" destination="jPB-lN-33F" id="VNL-Be-NoK"/>
                         <outlet property="ststustxt" destination="ccR-55-JXQ" id="AhM-bD-IyX"/>
+                        <segue destination="PED-9z-gjm" kind="show" identifier="login" id="LkR-nd-KlO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaN-Ht-FP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4982" y="2051"/>
+            <point key="canvasLocation" x="4895" y="487"/>
         </scene>
         <!--More Information-->
         <scene sceneID="c1S-7b-AU6">
@@ -614,12 +615,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iur-Ar-Zjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5641" y="2051"/>
+            <point key="canvasLocation" x="5698" y="1325"/>
         </scene>
-        <!--View Controller-->
+        <!--Loginviewcontroller-->
         <scene sceneID="dbK-C0-cU2">
             <objects>
-                <viewController id="PED-9z-gjm" sceneMemberID="viewController">
+                <viewController id="PED-9z-gjm" customClass="loginviewcontroller" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W3B-Ob-avD"/>
                         <viewControllerLayoutGuide type="bottom" id="tCU-xc-jaq"/>
@@ -648,6 +649,7 @@
                                     <color key="titleColor" white="0.27511535234899331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="createaccountbtn:" destination="PED-9z-gjm" eventType="touchUpInside" id="aKB-Ly-Eit"/>
                                     <segue destination="RQv-hR-XQg" kind="show" id="Qq7-XG-yJm"/>
                                 </connections>
                             </button>
@@ -683,14 +685,22 @@
                                 <state key="normal" image="Get Started.png">
                                     <color key="titleColor" white="0.2751153523" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginbtn:" destination="PED-9z-gjm" eventType="touchUpInside" id="fc1-hI-ZE0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="aeD-hV-kR0" id="ecx-ip-zdS"/>
+                        <outlet property="username" destination="FtS-pf-uVI" id="NcK-iQ-Ier"/>
+                        <segue destination="AtC-va-0IQ" kind="show" identifier="accountgood2" id="sSo-De-tDe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guR-lz-lGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3218.4000000000001" y="487.10644677661173"/>
+            <point key="canvasLocation" x="3393" y="-318"/>
         </scene>
         <!--Status Arcive-->
         <scene sceneID="RwO-ov-3ua">
@@ -850,12 +860,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFy-NF-hee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4982" y="2669"/>
+            <point key="canvasLocation" x="4546" y="1541"/>
         </scene>
-        <!--View Controller-->
+        <!--Signupviewcontoller-->
         <scene sceneID="Y2E-tr-Otz">
             <objects>
-                <viewController id="RQv-hR-XQg" sceneMemberID="viewController">
+                <viewController id="RQv-hR-XQg" customClass="signupviewcontoller" customModule="FCPS_Alert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="85R-vJ-w2U"/>
                         <viewControllerLayoutGuide type="bottom" id="nfi-Ru-seH"/>
@@ -907,6 +917,9 @@
                                 <state key="normal" image="Continue.png">
                                     <color key="titleColor" white="0.2751153523" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupbtn:" destination="RQv-hR-XQg" eventType="touchUpInside" id="3C1-wy-djt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7J-2A-fVH">
                                 <rect key="frame" x="116" y="620" width="143" height="27"/>
@@ -915,6 +928,9 @@
                                 <state key="normal" title="Terms and Condations">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="terms:" destination="RQv-hR-XQg" eventType="touchUpInside" id="J8l-bb-A0d"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Indicator.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pub-yU-Kdc">
                                 <rect key="frame" x="58" y="49" width="249" height="27"/>
@@ -930,10 +946,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="tFb-nL-Sq9" id="scR-25-MeO"/>
+                        <outlet property="password" destination="eb1-yS-xrE" id="Sxb-DZ-4WE"/>
+                        <outlet property="username" destination="CWV-ur-EQG" id="5km-2q-g1W"/>
+                        <segue destination="AtC-va-0IQ" kind="show" identifier="accountgood" id="VbK-wP-GJ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0LK-Iv-S2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3936.8000000000002" y="487.10644677661173"/>
+            <point key="canvasLocation" x="3393" y="486"/>
         </scene>
     </scenes>
     <resources>
@@ -957,4 +979,7 @@
         <image name="unnamed.png" width="300" height="300"/>
         <image name="willtestlogi1.png" width="1920" height="1080"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VbK-wP-GJ3"/>
+    </inferredMetricsTieBreakers>
 </document>

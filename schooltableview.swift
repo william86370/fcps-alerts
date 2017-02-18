@@ -42,6 +42,16 @@ class schooltableview: UITableViewController {
     
     
     override func viewDidLoad() {
+        
+        if FIRAuth.auth()?.currentUser != nil {
+            //good to go 
+            // ...
+        } else {
+            //no user signed in must force account creation or relogin
+            
+            performSegue(withIdentifier: "login", sender: self)            // ...
+        }
+        
         //set backround based on hour
         dayTimePeriodFormatter.dateFormat = "H"
         let dateString = dayTimePeriodFormatter.string(from: date as Date)
