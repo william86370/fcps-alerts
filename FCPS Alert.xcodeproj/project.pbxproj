@@ -20,6 +20,8 @@
 		8453DC4D1DDD5437007B18EE /* snowbackround2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC431DDD5437007B18EE /* snowbackround2.jpeg */; };
 		8453DC4E1DDD5437007B18EE /* snowbackround3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC441DDD5437007B18EE /* snowbackround3.jpg */; };
 		8453DC501DDD5C78007B18EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC4F1DDD5C78007B18EE /* AppDelegate.swift */; };
+		846EF2A41E58B6E60027C755 /* SnowDays.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846EF2A21E58B6E60027C755 /* SnowDays.storyboard */; };
+		846EF2A61E58BED20027C755 /* snowdaystextures in Resources */ = {isa = PBXBuildFile; fileRef = 846EF2A51E58BED20027C755 /* snowdaystextures */; };
 		847837911DCC052B00976D0A /* new backrounds in Resources */ = {isa = PBXBuildFile; fileRef = 847837901DCC052B00976D0A /* new backrounds */; };
 		84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9F4791D7B55A50077EFC0 /* schooltableview.swift */; };
 		84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */; };
@@ -139,6 +141,8 @@
 		8453DC431DDD5437007B18EE /* snowbackround2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowbackround2.jpeg; path = "new backrounds/snowbackround2.jpeg"; sourceTree = "<group>"; };
 		8453DC441DDD5437007B18EE /* snowbackround3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowbackround3.jpg; path = "new backrounds/snowbackround3.jpg"; sourceTree = "<group>"; };
 		8453DC4F1DDD5C78007B18EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846EF2A31E58B6E60027C755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SnowDays.storyboard; sourceTree = "<group>"; };
+		846EF2A51E58BED20027C755 /* snowdaystextures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = snowdaystextures; sourceTree = "<group>"; };
 		8478377D1DCB6E3600976D0A /* KFSwiftImageLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KFSwiftImageLoader; path = "../../Downloads/KFSwiftImageLoader-master/KFSwiftImageLoader"; sourceTree = "<group>"; };
 		847837891DCB777200976D0A /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Nuke.framework"; sourceTree = "<group>"; };
 		847837901DCC052B00976D0A /* new backrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "new backrounds"; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 				9330E8C21D30564100EBD4C6 /* FCPS Alert.entitlements */,
 				93A753E11C28A84B00704D25 /* Source */,
 				934D07A81C17C7E6005D9810 /* Main.storyboard */,
+				846EF2A21E58B6E60027C755 /* SnowDays.storyboard */,
 				8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */,
 				84D9F4791D7B55A50077EFC0 /* schooltableview.swift */,
 				8453DC391DDBF446007B18EE /* settings.swift */,
@@ -377,6 +382,7 @@
 		934D07D51C17D5C7005D9810 /* fcps alerts textures */ = {
 			isa = PBXGroup;
 			children = (
+				846EF2A51E58BED20027C755 /* snowdaystextures */,
 				8453DC3B1DDD5437007B18EE /* 1.jpg */,
 				8453DC3C1DDD5437007B18EE /* 3.jpg */,
 				8453DC3D1DDD5437007B18EE /* 4.png */,
@@ -588,6 +594,7 @@
 				934D07B21C17C7E6005D9810 /* LaunchScreen.storyboard in Resources */,
 				9330E8BD1D30519400EBD4C6 /* snow3.png in Resources */,
 				8453DC491DDD5437007B18EE /* 6.jpg in Resources */,
+				846EF2A61E58BED20027C755 /* snowdaystextures in Resources */,
 				84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */,
 				93F5D7621C5471DA008957A9 /* weekend backround.png in Resources */,
 				93A753ED1C28ACAC00704D25 /* delayedsmallcircle.png in Resources */,
@@ -617,6 +624,7 @@
 				8453DC451DDD5437007B18EE /* 1.jpg in Resources */,
 				934D07DD1C17D5C7005D9810 /* greenopenbackround.png in Resources */,
 				931061AE1C1D1394009A74A1 /* Menu-512.png in Resources */,
+				846EF2A41E58B6E60027C755 /* SnowDays.storyboard in Resources */,
 				935AE69D1C2339D90083F7A1 /* smallopencircle.png in Resources */,
 				847837911DCC052B00976D0A /* new backrounds in Resources */,
 				9332BB331D30464B000581CE /* willtestlogi1.png in Resources */,
@@ -699,6 +707,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		846EF2A21E58B6E60027C755 /* SnowDays.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846EF2A31E58B6E60027C755 /* Base */,
+			);
+			name = SnowDays.storyboard;
+			sourceTree = "<group>";
+		};
 		934D07A81C17C7E6005D9810 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
