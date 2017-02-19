@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class signupviewcontoller: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     
     @IBOutlet weak var username: UITextField!

@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import GoogleSignIn
+import Firebase
 
 class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
 //get the users usernamme

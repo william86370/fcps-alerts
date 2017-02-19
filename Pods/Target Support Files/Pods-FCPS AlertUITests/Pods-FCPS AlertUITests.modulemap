@@ -1,0 +1,6 @@
+framework module Pods_FCPS_AlertUITests {
+  umbrella header "Pods-FCPS AlertUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

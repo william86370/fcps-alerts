@@ -8,11 +8,6 @@
 
 #ifndef swiftbridgeheader_h
 #define swiftbridgeheader_h
-#import "Firebase.h"
-
-#import <GoogleSignIn/GoogleSignIn.h>
-
-
 
 
 #endif /* swiftbridgeheader_h */
