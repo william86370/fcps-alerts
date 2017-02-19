@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84350DA51E59271D00D911E2 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84350DA41E59271D00D911E2 /* appicon.png */; };
 		8453DC361DDBF2CC007B18EE /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */; };
 		8453DC3A1DDBF446007B18EE /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453DC391DDBF446007B18EE /* settings.swift */; };
 		8453DC451DDD5437007B18EE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8453DC3B1DDD5437007B18EE /* 1.jpg */; };
@@ -74,6 +75,12 @@
 		846EF3A41E58DDCF0027C755 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 846EF3811E58DDCF0027C755 /* Bg.png */; };
 		846EF3A51E58DDCF0027C755 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 846EF3811E58DDCF0027C755 /* Bg.png */; };
 		847837911DCC052B00976D0A /* new backrounds in Resources */ = {isa = PBXBuildFile; fileRef = 847837901DCC052B00976D0A /* new backrounds */; };
+		849C14F21E59488B00EF867E /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C14ED1E59488B00EF867E /* GoogleAppUtilities.framework */; };
+		849C14F31E59488B00EF867E /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 849C14EE1E59488B00EF867E /* GoogleSignIn.bundle */; };
+		849C14F41E59488B00EF867E /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C14EF1E59488B00EF867E /* GoogleSignIn.framework */; };
+		849C14F51E59488B00EF867E /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C14F01E59488B00EF867E /* GoogleSignInDependencies.framework */; };
+		849C14F61E59488B00EF867E /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C14F11E59488B00EF867E /* GoogleSymbolUtilities.framework */; };
+		849C14F81E5948BC00EF867E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C14F71E5948BC00EF867E /* SafariServices.framework */; };
 		84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9F4791D7B55A50077EFC0 /* schooltableview.swift */; };
 		84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */; };
 		93002E4C1D30A74B009FFFE6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */; };
@@ -170,6 +177,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84350DA41E59271D00D911E2 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		8453DC351DDBF2CC007B18EE /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		8453DC391DDBF446007B18EE /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 		8453DC3B1DDD5437007B18EE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "new backrounds/1.jpg"; sourceTree = "<group>"; };
@@ -216,6 +224,12 @@
 		8478377D1DCB6E3600976D0A /* KFSwiftImageLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KFSwiftImageLoader; path = "../../Downloads/KFSwiftImageLoader-master/KFSwiftImageLoader"; sourceTree = "<group>"; };
 		847837891DCB777200976D0A /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Nuke.framework"; sourceTree = "<group>"; };
 		847837901DCC052B00976D0A /* new backrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "new backrounds"; sourceTree = "<group>"; };
+		849C14ED1E59488B00EF867E /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		849C14EE1E59488B00EF867E /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		849C14EF1E59488B00EF867E /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		849C14F01E59488B00EF867E /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		849C14F11E59488B00EF867E /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		849C14F71E5948BC00EF867E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		84D9F4791D7B55A50077EFC0 /* schooltableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = schooltableview.swift; path = ../schooltableview.swift; sourceTree = "<group>"; };
 		84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84D9F4891D7DF9990077EFC0 /* swiftbridgeheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swiftbridgeheader.h; sourceTree = "<group>"; };
@@ -294,17 +308,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934D07FB1C17DB86005D9810 /* SystemConfiguration.framework in Frameworks */,
+				849C14F81E5948BC00EF867E /* SafariServices.framework in Frameworks */,
 				846EF2CA1E58D64C0027C755 /* FirebaseDatabase.framework in Frameworks */,
 				846EF2CF1E58D6A50027C755 /* FirebaseRemoteConfig.framework in Frameworks */,
 				846EF2D01E58D6A50027C755 /* Protobuf.framework in Frameworks */,
+				849C14F41E59488B00EF867E /* GoogleSignIn.framework in Frameworks */,
 				846EF2D41E58D6B90027C755 /* FirebaseDynamicLinks.framework in Frameworks */,
 				934D07FF1C17DBA0005D9810 /* libsqlite3.tbd in Frameworks */,
+				849C14F51E59488B00EF867E /* GoogleSignInDependencies.framework in Frameworks */,
 				846EF2C21E58D63A0027C755 /* FirebaseCore.framework in Frameworks */,
 				934D07FD1C17DB93005D9810 /* libz.tbd in Frameworks */,
-				934D07FB1C17DB86005D9810 /* SystemConfiguration.framework in Frameworks */,
+				849C14F61E59488B00EF867E /* GoogleSymbolUtilities.framework in Frameworks */,
 				846EF2BC1E58D6370027C755 /* GoogleMobileAds.framework in Frameworks */,
 				846EF2C71E58D6400027C755 /* FirebaseAuth.framework in Frameworks */,
 				934D07F91C17DB7D005D9810 /* StoreKit.framework in Frameworks */,
+				849C14F21E59488B00EF867E /* GoogleAppUtilities.framework in Frameworks */,
 				846EF2D21E58D6B20027C755 /* FirebaseMessaging.framework in Frameworks */,
 				934D07F71C17DB78005D9810 /* Security.framework in Frameworks */,
 				934D07F51C17DB72005D9810 /* QuartzCore.framework in Frameworks */,
@@ -341,6 +360,7 @@
 		93002E4A1D30A74B009FFFE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				849C14F71E5948BC00EF867E /* SafariServices.framework */,
 				847837891DCB777200976D0A /* Nuke.framework */,
 				8478377D1DCB6E3600976D0A /* KFSwiftImageLoader */,
 				93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */,
@@ -353,6 +373,11 @@
 			children = (
 				846EF2BA1E58D6290027C755 /* Firebase.h */,
 				84D9F4891D7DF9990077EFC0 /* swiftbridgeheader.h */,
+				849C14ED1E59488B00EF867E /* GoogleAppUtilities.framework */,
+				849C14EE1E59488B00EF867E /* GoogleSignIn.bundle */,
+				849C14EF1E59488B00EF867E /* GoogleSignIn.framework */,
+				849C14F01E59488B00EF867E /* GoogleSignInDependencies.framework */,
+				849C14F11E59488B00EF867E /* GoogleSymbolUtilities.framework */,
 				846EF2D51E58D6C00027C755 /* FirebaseAppIndexing.framework */,
 				846EF2D31E58D6B90027C755 /* FirebaseDynamicLinks.framework */,
 				846EF2D11E58D6B20027C755 /* FirebaseMessaging.framework */,
@@ -442,6 +467,7 @@
 		934D07D51C17D5C7005D9810 /* fcps alerts textures */ = {
 			isa = PBXGroup;
 			children = (
+				84350DA41E59271D00D911E2 /* appicon.png */,
 				846EF3761E58DDCF0027C755 /* bg2.png */,
 				846EF3771E58DDCF0027C755 /* Continue.png */,
 				846EF3781E58DDCF0027C755 /* Password.png */,
@@ -665,6 +691,7 @@
 				9330E8C41D305A9500EBD4C6 /* Swift-48.png in Resources */,
 				8453DC4E1DDD5437007B18EE /* snowbackround3.jpg in Resources */,
 				934D07B21C17C7E6005D9810 /* LaunchScreen.storyboard in Resources */,
+				84350DA51E59271D00D911E2 /* appicon.png in Resources */,
 				846EF3A01E58DDCF0027C755 /* Usernamel.png in Resources */,
 				846EF3881E58DDCF0027C755 /* Password.png in Resources */,
 				9330E8BD1D30519400EBD4C6 /* snow3.png in Resources */,
@@ -696,6 +723,7 @@
 				846EF3911E58DDCF0027C755 /* Indicator.png in Resources */,
 				934D07AA1C17C7E6005D9810 /* Mainold.storyboard in Resources */,
 				93A753F21C28F5AB00704D25 /* snowflake.png in Resources */,
+				849C14F31E59488B00EF867E /* GoogleSignIn.bundle in Resources */,
 				934D07DB1C17D5C7005D9810 /* closedcircle.png in Resources */,
 				846EF3941E58DDCF0027C755 /* 2-Sign Up.png in Resources */,
 				8453DC4B1DDD5437007B18EE /* 8.jpg in Resources */,

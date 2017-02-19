@@ -8,47 +8,69 @@
 
 import UIKit
 
-class signupviewcontoller: UIViewController,UIPickerViewDelegate {
+class signupviewcontoller: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource {
+    
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var password: UITextField!
 
-    @IBOutlet weak var pickerview: UIPickerView!
-    @IBOutlet weak var statelbl: UILabel!
+    @IBOutlet weak var schoollbl: UILabel!
+   
+    @IBOutlet weak var pickerTextField: UITextField!
     
-    var pickerstates = ["VA"];
-    
-    @IBAction func statepicker(_ sender: Any) {
-    
+    @IBOutlet weak var nextbtn: UIButton!
     
     
     
+    var ref: FIRDatabaseReference
     
+   
+    
+    var pickOption = ["va","wv","nc","ny"]
+    var pickerschools = [String]()
+    var state = ""
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    
-    
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-    return 1
-    }
-    
-    private func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerstates.count
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickOption.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerstates[row]
+        return pickOption[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        statelbl.text = pickerstates[row]
+        pickerTextField.text = pickOption[row]
+        if(nextbtn.isUserInteractionEnabled == false){
+         nextbtn.isUserInteractionEnabled = true
+        }
     }
-    
-    
-    
+    @IBAction func next(_ sender: Any) {
+        print("hi")
+        state = pickerTextField.text!
+        schoollbl.text = "Next Lets Select Your School or Organation"
+        pickerTextField.text = " "
+            
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value!)
+        })
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //assign firebase database
+         ref = FIRDatabase.database().reference()
+        
+        
+        let pickerView = UIPickerView()
+        
+        pickerView.delegate = self
+        
+        pickerTextField.inputView = pickerView
         
         
         //Looks for single or multiple taps.
