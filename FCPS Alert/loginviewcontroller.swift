@@ -9,16 +9,22 @@
 import UIKit
 
 
-class loginviewcontroller: UIViewController {
+class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
 //get the users usernamme
     @IBOutlet weak var username: UITextField!
     //get the users password
     @IBOutlet weak var password: UITextField!
     
+ 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
+        
+        
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(loginviewcontroller.dismissKeyboard))
         
@@ -56,6 +62,29 @@ class loginviewcontroller: UIViewController {
     }
 
     
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        // ...
+        if let error = error {
+            // ...
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                          accessToken: authentication.accessToken
+        
+        )
+        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+            // ...
+            if let error = error {
+                // ...
+                return
+            }
+            
+            // ...
+        }
+       
+    }
     
     
     

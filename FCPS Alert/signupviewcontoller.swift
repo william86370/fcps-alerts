@@ -8,7 +8,7 @@
 
 import UIKit
 
-class signupviewcontoller: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource {
+class signupviewcontoller: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     
     @IBOutlet weak var username: UITextField!
     
@@ -24,7 +24,7 @@ class signupviewcontoller: UIViewController,  UIPickerViewDelegate, UIPickerView
     
     
     
-    var ref: FIRDatabaseReference
+    var ref: FIRDatabaseReference!
     
    
     
@@ -101,7 +101,7 @@ class signupviewcontoller: UIViewController,  UIPickerViewDelegate, UIPickerView
             changeRequest?.displayName = self.username.text!
             changeRequest?.commitChanges() { (error) in
               self.performSegue(withIdentifier: "accountgood", sender: self)
-            }            // ...
+            }           // ...
         }
         
     }
@@ -119,3 +119,4 @@ class signupviewcontoller: UIViewController,  UIPickerViewDelegate, UIPickerView
     */
 
 }
+
