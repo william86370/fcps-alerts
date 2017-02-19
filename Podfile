@@ -19,8 +19,7 @@ pod 'Firebase/Invites'
 pod 'Firebase/Messaging'
 pod 'Firebase/RemoteConfig'
 pod 'Firebase/Storage' 
-
-
+pod 'Gifu'
  target 'FCPS AlertTests' do
     inherit! :search_paths
     # Pods for testing

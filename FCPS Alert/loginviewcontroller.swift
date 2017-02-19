@@ -9,6 +9,7 @@
 import UIKit
 import GoogleSignIn
 import Firebase
+import Gifu
 
 class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
 //get the users usernamme
@@ -21,12 +22,13 @@ class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().signIn()
     }
   
+    @IBOutlet weak var image2: GIFImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self
-        
+                image2.animate(withGIFNamed: "snowfinal")
         
         
         //Looks for single or multiple taps.

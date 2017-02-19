@@ -68,6 +68,8 @@
 		84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */; };
 		84DE2D881E596F2700C6F966 /* btn_google_light_normal_ios.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DE2D871E596F2700C6F966 /* btn_google_light_normal_ios.png */; };
 		84DE2D8A1E5970CB00C6F966 /* btn_google_signin_light_normal_web.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DE2D891E5970CB00C6F966 /* btn_google_signin_light_normal_web.png */; };
+		84DE2D8C1E59818600C6F966 /* snowfinal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84DE2D8B1E59818600C6F966 /* snowfinal.gif */; };
+		84DE2D8E1E59851800C6F966 /* Gifu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DE2D8D1E59851800C6F966 /* Gifu.framework */; };
 		93002E4C1D30A74B009FFFE6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */; };
 		93002E5B1D30A7BD009FFFE6 /* Mainold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934D07A81C17C7E6005D9810 /* Mainold.storyboard */; };
 		930DCC3A1C266F13003CA42B /* Info-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 930DCC391C266F13003CA42B /* Info-100-2.png */; };
@@ -205,6 +207,8 @@
 		84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84DE2D871E596F2700C6F966 /* btn_google_light_normal_ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_google_light_normal_ios.png; sourceTree = "<group>"; };
 		84DE2D891E5970CB00C6F966 /* btn_google_signin_light_normal_web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_google_signin_light_normal_web.png; sourceTree = "<group>"; };
+		84DE2D8B1E59818600C6F966 /* snowfinal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snowfinal.gif; sourceTree = "<group>"; };
+		84DE2D8D1E59851800C6F966 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = "../../Library/Developer/Xcode/DerivedData/FCPS_Alert-ggpeqnmmtymjnceezatjidtpoyos/Build/Products/Debug-iphonesimulator/Gifu/Gifu.framework"; sourceTree = "<group>"; };
 		928C199C5011C90FA7B0B448 /* Pods_FCPS_AlertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCPS_AlertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93002E491D30A74B009FFFE6 /* Alert widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Alert widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -285,6 +289,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DE2D8E1E59851800C6F966 /* Gifu.framework in Frameworks */,
 				934D07FB1C17DB86005D9810 /* SystemConfiguration.framework in Frameworks */,
 				849C14F81E5948BC00EF867E /* SafariServices.framework in Frameworks */,
 				934D07FF1C17DBA0005D9810 /* libsqlite3.tbd in Frameworks */,
@@ -322,6 +327,7 @@
 		93002E4A1D30A74B009FFFE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84DE2D8D1E59851800C6F966 /* Gifu.framework */,
 				849C14F71E5948BC00EF867E /* SafariServices.framework */,
 				847837891DCB777200976D0A /* Nuke.framework */,
 				8478377D1DCB6E3600976D0A /* KFSwiftImageLoader */,
@@ -413,6 +419,7 @@
 		934D07D51C17D5C7005D9810 /* fcps alerts textures */ = {
 			isa = PBXGroup;
 			children = (
+				84DE2D8B1E59818600C6F966 /* snowfinal.gif */,
 				84DE2D891E5970CB00C6F966 /* btn_google_signin_light_normal_web.png */,
 				84DE2D871E596F2700C6F966 /* btn_google_light_normal_ios.png */,
 				84350DA41E59271D00D911E2 /* appicon.png */,
@@ -675,6 +682,7 @@
 				8453DC4A1DDD5437007B18EE /* 7.jpg in Resources */,
 				846EF3A31E58DDCF0027C755 /* Bg.png in Resources */,
 				93A753E01C27A52200704D25 /* Launch Screen.storyboard in Resources */,
+				84DE2D8C1E59818600C6F966 /* snowfinal.gif in Resources */,
 				9343FEFC1C1BF99A004F17D9 /* splash screen.png in Resources */,
 				8453DC4C1DDD5437007B18EE /* snowbackround.jpg in Resources */,
 				934D07AF1C17C7E6005D9810 /* Assets.xcassets in Resources */,

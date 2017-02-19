@@ -83,6 +83,7 @@ PODS:
   - FirebaseStorage (1.0.6):
     - FirebaseAnalytics (~> 3.7)
     - GTMSessionFetcher/Core (~> 1.1)
+  - Gifu (2.0.0)
   - Google-Mobile-Ads-SDK (7.17.0)
   - Google/Core (3.0.3):
     - FirebaseAnalytics (~> 3.2)
@@ -142,6 +143,7 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/RemoteConfig
   - Firebase/Storage
+  - Gifu
   - Google/SignIn
 
 SPEC CHECKSUMS:
@@ -158,6 +160,7 @@ SPEC CHECKSUMS:
   FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
   FirebaseRemoteConfig: f8625d0693b8a6737cdd867a9c6e9ea0e3c70a6a
   FirebaseStorage: 63628572a5fde258f8e933b5fb42697468da0158
+  Gifu: 56a4d8f1092399159fa32662aa2232158b48d8ac
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
   Google-Mobile-Ads-SDK: a8bf4211624999b73e4184be516f94770b139525
   GoogleAPIClientForREST: 9e5fd600a06c38abf92b5db337c5df2cfb95ee12
@@ -167,6 +170,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
 
-PODFILE CHECKSUM: e36c155c61c16804008291d874912e6db5a2d4c2
+PODFILE CHECKSUM: 352653840e52fceb3ecc483affc10f849ef12c6d
 
 COCOAPODS: 1.1.1

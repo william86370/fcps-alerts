@@ -70,7 +70,7 @@ class signupviewcontoller: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         pickerView.delegate = self
         
-        pickerTextField.inputView = pickerView
+        //pickerTextField.inputView = pickerView
         
         
         //Looks for single or multiple taps.
