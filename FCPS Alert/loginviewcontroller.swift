@@ -16,14 +16,17 @@ class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
     //get the users password
     @IBOutlet weak var password: UITextField!
     
- 
     
+    @IBAction func login(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+    }
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+        
         
         
         //Looks for single or multiple taps.
@@ -64,7 +67,7 @@ class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
 
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        // ...
+        print("good with google")
         if let error = error {
             // ...
             return
@@ -72,22 +75,9 @@ class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
         
         guard let authentication = user.authentication else { return }
         let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                          accessToken: authentication.accessToken
-        
-        )
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-            // ...
-            if let error = error {
-                // ...
-                return
-            }
-            
-            // ...
-        }
-       
+                                                          accessToken: authentication.accessToken)
+        // ...
     }
-    
-    
     
     @IBAction func createaccountbtn(_ sender: Any) {
         
@@ -102,5 +92,4 @@ class loginviewcontroller: UIViewController, GIDSignInUIDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
+   }

@@ -66,6 +66,8 @@
 		849C14F81E5948BC00EF867E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C14F71E5948BC00EF867E /* SafariServices.framework */; };
 		84D9F47A1D7B55A50077EFC0 /* schooltableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9F4791D7B55A50077EFC0 /* schooltableview.swift */; };
 		84D9F47C1D7DF6700077EFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */; };
+		84DE2D881E596F2700C6F966 /* btn_google_light_normal_ios.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DE2D871E596F2700C6F966 /* btn_google_light_normal_ios.png */; };
+		84DE2D8A1E5970CB00C6F966 /* btn_google_signin_light_normal_web.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DE2D891E5970CB00C6F966 /* btn_google_signin_light_normal_web.png */; };
 		93002E4C1D30A74B009FFFE6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */; };
 		93002E5B1D30A7BD009FFFE6 /* Mainold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934D07A81C17C7E6005D9810 /* Mainold.storyboard */; };
 		930DCC3A1C266F13003CA42B /* Info-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 930DCC391C266F13003CA42B /* Info-100-2.png */; };
@@ -201,6 +203,8 @@
 		849C14F71E5948BC00EF867E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		84D9F4791D7B55A50077EFC0 /* schooltableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = schooltableview.swift; path = ../schooltableview.swift; sourceTree = "<group>"; };
 		84D9F47B1D7DF6700077EFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84DE2D871E596F2700C6F966 /* btn_google_light_normal_ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_google_light_normal_ios.png; sourceTree = "<group>"; };
+		84DE2D891E5970CB00C6F966 /* btn_google_signin_light_normal_web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_google_signin_light_normal_web.png; sourceTree = "<group>"; };
 		928C199C5011C90FA7B0B448 /* Pods_FCPS_AlertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCPS_AlertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93002E491D30A74B009FFFE6 /* Alert widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Alert widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93002E4B1D30A74B009FFFE6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -409,6 +413,8 @@
 		934D07D51C17D5C7005D9810 /* fcps alerts textures */ = {
 			isa = PBXGroup;
 			children = (
+				84DE2D891E5970CB00C6F966 /* btn_google_signin_light_normal_web.png */,
+				84DE2D871E596F2700C6F966 /* btn_google_light_normal_ios.png */,
 				84350DA41E59271D00D911E2 /* appicon.png */,
 				846EF3761E58DDCF0027C755 /* bg2.png */,
 				846EF3771E58DDCF0027C755 /* Continue.png */,
@@ -650,6 +656,7 @@
 				846EF38E1E58DDCF0027C755 /* Name.png in Resources */,
 				846EF38B1E58DDCF0027C755 /* Email.png in Resources */,
 				931248A41C23127B0095B70A /* clickbox.png in Resources */,
+				84DE2D881E596F2700C6F966 /* btn_google_light_normal_ios.png in Resources */,
 				931061B01C1D1628009A74A1 /* unnamed.png in Resources */,
 				931061B61C1D18C0009A74A1 /* delayovel.png in Resources */,
 				9330E8C41D305A9500EBD4C6 /* Swift-48.png in Resources */,
@@ -674,6 +681,7 @@
 				9330E8C11D30521500EBD4C6 /* snow2.png in Resources */,
 				93A753DC1C27A39D00704D25 /* y6DXcMc.jpg in Resources */,
 				8453DC461DDD5437007B18EE /* 3.jpg in Resources */,
+				84DE2D8A1E5970CB00C6F966 /* btn_google_signin_light_normal_web.png in Resources */,
 				9343FEF81C1B6CEF004F17D9 /* loadingcircle.png in Resources */,
 				931061B21C1D1677009A74A1 /* Menu-512-2.png in Resources */,
 				93A753E61C28A84B00704D25 /* pulltorefresharrow.png in Resources */,

@@ -437,7 +437,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delayed Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofx-Yf-10k">
-                                                    <rect key="frame" x="19" y="15" width="123" height="21"/>
+                                                    <rect key="frame" x="19" y="14" width="123" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="123" id="VXH-Ua-iFe"/>
                                                     </constraints>
@@ -446,7 +446,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="csL-Ul-RsO">
-                                                    <rect key="frame" x="312" y="7" width="51" height="31"/>
+                                                    <rect key="frame" x="312" y="6" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="delayedch:" destination="05H-3a-KgR" eventType="valueChanged" id="PMu-dc-a8M"/>
@@ -533,7 +533,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-yt-4Yu">
-                                                    <rect key="frame" x="28" y="12" width="129" height="21"/>
+                                                    <rect key="frame" x="28" y="11" width="129" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="129" id="FU4-xd-6ro"/>
                                                     </constraints>
@@ -542,7 +542,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5EI-2e-68r">
-                                                    <rect key="frame" x="312" y="7" width="51" height="31"/>
+                                                    <rect key="frame" x="312" y="6" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="othermessagech:" destination="05H-3a-KgR" eventType="valueChanged" id="BHn-rO-0qe"/>
@@ -657,11 +657,6 @@
                                 <rect key="frame" x="160" y="82" width="54" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9J-fH-HBA">
-                                <rect key="frame" x="62" y="521" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Password.png" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-P9-abs">
                                 <rect key="frame" x="20" y="384" width="334" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -694,11 +689,18 @@
                                     <action selector="loginbtn:" destination="PED-9z-gjm" eventType="touchUpInside" id="fc1-hI-ZE0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9J-fH-HBA">
+                                <rect key="frame" x="91" y="521" width="192" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn_google_signin_light_normal_web.png"/>
+                                <connections>
+                                    <action selector="login:" destination="PED-9z-gjm" eventType="touchUpInside" id="091-1P-sCF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="loginwithgoogle" destination="p9J-fH-HBA" id="a9s-VF-4tT"/>
                         <outlet property="password" destination="aeD-hV-kR0" id="ecx-ip-zdS"/>
                         <outlet property="username" destination="FtS-pf-uVI" id="NcK-iQ-Ier"/>
                         <segue destination="AtC-va-0IQ" kind="show" identifier="accountgood2" id="sSo-De-tDe"/>
@@ -1036,6 +1038,7 @@
         <image name="Usernamel.png" width="670" height="131"/>
         <image name="appicon.png" width="167" height="167"/>
         <image name="bg2.png" width="750" height="1334"/>
+        <image name="btn_google_signin_light_normal_web.png" width="191" height="46"/>
         <image name="clickbox.png" width="756" height="183"/>
         <image name="graybackround.png" width="1125" height="894"/>
         <image name="loadingcircle.png" width="405" height="405"/>

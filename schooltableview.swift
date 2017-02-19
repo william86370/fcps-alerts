@@ -46,10 +46,12 @@ class schooltableview: UITableViewController {
         
         if FIRAuth.auth()?.currentUser != nil {
             //good to go 
+            print("good to go")
+            
             // ...
         } else {
             //no user signed in must force account creation or relogin
-            
+            print("no logion")
             performSegue(withIdentifier: "login", sender: self)            // ...
         }
         
